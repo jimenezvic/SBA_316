@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous">
+    <link rel="icon" href="./images/sddefault.jpg" type="image/x-icon">
+
+    <title>RockAuto</title>
+</head>
+<body>
+    <header id="header-e">
+        <div id="logo-div">
+            <img src="./images/05wLZci5uBv8exeJC4sizy8-color.webp" alt="logo-comp" height="100" width="130">
+            <p id="title">ALL THE PARTS YOUR CAR WILL EVER NEED</p>
+        </div>
+    </header>
+    <div id="language-div">
+        <p style="font-size: small;">Show prices in
+            <select name="Country" id="CountryId" required>
+                <option value="">USA Dollars ($)</option>
+                <option value="euros">Euros (€)</option>
+                <option value="Mexican Pesos">Mexican Pesos(Mex$)</option>
+                <option value="British">British Pounds (£)</option>
+                <option value="Japanese Yen">Japanese Yen (¥)</option>
+            </select>
+        </p>
+        <p id="languages">
+            <a href="#">English</a>|
+            <a href="#">Spanish</a>|
+            <a href="#">Deutsch</a>|
+            <a href="#">Français</a>
+        </p>
+        <div id="log-btn">
+            <button class="btn"><i class="fa fa-question-circle" aria-hidden="true"></i> Help</button>
+            <button class="btn"><i class="fa fa-archive" aria-hidden="true"></i> Order Status & Returns</button>
+            <button class="log-in"><i class="fa fa-user" aria-hidden="true"></i> Log In or Create Account</button>
+        </div>
+    </div>
+    <div class="cart-div">
+        <button><i class="fa fa-wrench" aria-hidden="true"></i> Part Catalog</button>
+        <button class="cart-menu">Part Numbers Search</button>
+        <button class="cart-menu">Tools & Universal Parts</button>
+        <button class="cart-menu" id="my-cart">Cart <i class="fa fa-cart-plus" aria-hidden="true"></i></button>
+        <input type="text" name="Name" placeholder="year make model part type or part number or question" pattern="^[a-zA-Z]+" title="input" style="width: 40%;">
+        <button><i class="fa fa-search" aria-hidden="true"></i></button>
+        <button id="cart">total: <i></i></button>
+    </div>
+    <div id="rocking-part">
+
+        <!-- <img src="./images/rocking.jpg" alt=""> -->
+
+    </div>
+    <aside id="sidebar"></aside>
+    <script src="main.js"></script>
+</body>
+</html>
