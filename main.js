@@ -1,3 +1,5 @@
+
+
 document.addEventListener("DOMContentLoaded", function() {
     const sidebar = document.getElementById("sidebar");
     const cart = document.getElementById("my-cart");
@@ -5,6 +7,8 @@ document.addEventListener("DOMContentLoaded", function() {
     const cartContent = document.createElement('div');
     cartContent.id = 'cart-content';
     let selectedItems = [];
+
+
 
     
 
@@ -107,7 +111,21 @@ document.addEventListener("DOMContentLoaded", function() {
 
         sidebar.appendChild(document.createElement('hr'));
     });
-
+    const languagebtn = document.querySelector('#language-div');
+    const btndivs = document.querySelector('#log-btn');
+    const labels = ['Help' , 'Order Status' , 'Log in'];
+    const iTags = ['fa fa-question-circle', 'fa fa-archive', 'fa fa-user'];
+    labels.forEach((label, index) => {
+        const btns = document.createElement('button');
+        btns.innerText=label;
+        btns.style.width = '150px';
+        btns.style.height = '20px';
+        const itages = document.createElement('i');
+        itages.className = iTags[index];
+        btns.appendChild(itages);
+        languagebtn.appendChild(btns)
+    
+    });
     function addToCart(item) {
         selectedItems.push(item);
     }
@@ -142,5 +160,6 @@ document.addEventListener("DOMContentLoaded", function() {
         cart.appendChild(cartContent);
     }
 });
+
 
 
