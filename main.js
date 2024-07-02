@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     const sidebar = document.getElementById("sidebar");
-    const cart = document.getElementById("cart");
+    const cart = document.getElementById("my-cart");
     const my_cart = document.getElementById("my-cart");
     const cartContent = document.createElement('div');
     cartContent.id = 'cart-content';
