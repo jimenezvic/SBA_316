@@ -6,12 +6,8 @@ document.addEventListener("DOMContentLoaded", function() {
     cartContent.id = 'cart-content';
     let selectedItems = [];
 
-    const formats = document.getElementById('all-formats'); //div
-    const header = document.createElement('h3');
-    header.textContent = ('Sign Up Form');
-    formats.appendChild(header);
-
     
+
     const carMakes = [
         {
             text: "ABARTH",
