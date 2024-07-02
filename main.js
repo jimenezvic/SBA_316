@@ -115,6 +115,8 @@ document.addEventListener("DOMContentLoaded", function() {
     const btndivs = document.querySelector('#log-btn');
     const labels = ['Help' , 'Order Status' , 'Log in'];
     const iTags = ['fa fa-question-circle', 'fa fa-archive', 'fa fa-user'];
+    const ids = ['bt1' , 'bt2' , 'bt3'];
+
     labels.forEach((label, index) => {
         const btns = document.createElement('button');
         btns.innerText=label;
@@ -122,10 +124,27 @@ document.addEventListener("DOMContentLoaded", function() {
         btns.style.height = '20px';
         const itages = document.createElement('i');
         itages.className = iTags[index];
+        btns.id = ids[index];
         btns.appendChild(itages);
-        languagebtn.appendChild(btns)
+        languagebtn.appendChild(btns);
     
     });
+
+    const btnUser = document.getElementById('bt3');
+    
+    const loGGIN = (event) => {
+
+        const clicked = event.target;
+
+        if(clicked){
+
+            window.location.href = './index.html'
+        }
+    };
+
+    btnUser.addEventListener('click' , loGGIN);
+
+
     function addToCart(item) {
         selectedItems.push(item);
     }
