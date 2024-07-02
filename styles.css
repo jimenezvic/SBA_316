@@ -15,10 +15,23 @@ h1 {
     height: 20%;
     font-size: larger;
   }
-  #formats{
-    display: flexbox;
-    background-color: grey;
-    text-align: center; 
+#back-side{
+position: relative;
+display: flex;
+/* background-color: black; */
+width: 700px;
+height: 700px;
+}
+#all-formats{
+  position: absolute;
+  display: grid;
+  background-color: gray;
+  height: 100px;
+  width: 100px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: auto;
 }
 .sign-up{
 display:flexbox;

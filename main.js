@@ -5,6 +5,12 @@ document.addEventListener("DOMContentLoaded", function() {
     const cartContent = document.createElement('div');
     cartContent.id = 'cart-content';
     let selectedItems = [];
+
+    const formats = document.getElementById('all-formats'); //div
+    const header = document.createElement('h3');
+    header.textContent = ('Sign Up Form');
+    formats.appendChild(header);
+
     
     const carMakes = [
         {
@@ -80,6 +86,7 @@ document.addEventListener("DOMContentLoaded", function() {
             checkbox.value = year.text;
             checkbox.id = `${make.text}-${year.text}`;
             checkbox.dataset.price = year.price; 
+
             checkbox.addEventListener('change', function() {
                 const price = parseFloat(this.dataset.price);
                 const item = {
