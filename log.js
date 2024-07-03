@@ -79,3 +79,11 @@ format.appendChild(btndiv);
 btndiv.appendChild(logIn);
 format.appendChild(keepLog);
 btndiv.appendChild(guest);
+
+const continueGUESS = (event) => {
+    const pressed = event.target;
+    if(pressed){
+        window.location.href= './e-commerce.html';
+    }
+}
+guest.addEventListener('click' , continueGUESS);
